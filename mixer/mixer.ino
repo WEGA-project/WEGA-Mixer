@@ -18,11 +18,14 @@ const char* password = "YOUR_WIFI_PASSWORD";
 float scale_calibration_A = 2030;
 float scale_calibration_B = 2030;
 
+//
+
+#define board_ESP32
 // Kalman filtering in scales mode
 #define KALMAN true
 
 // Setting WEGA-API
-#define WegaApiUrl "http://192.168.237.107/remote/mixerdb.php"
+#define WegaApiUrl "http://192.168.2.66/remote/mixerdb.php"
 
 // Pump #1
 #define pump1  A0        // Port 1
@@ -71,4 +74,3 @@ float scale_calibration_B = 2030;
 #define pump8r B7
 #define pump8n "8:B"
 #define pump8p 4000
-
